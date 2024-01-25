@@ -153,6 +153,14 @@ export default function Menu() {
             Sign in
           </Link>
         </li>
+        <li
+          className="nl-simple reg-fst-link mobile-last-link"
+          aria-haspopup="true"
+        >
+          <Link href="/templates" className="h-link">
+            Templates
+          </Link>
+        </li>
         {/* SIGN UP BUTTON */}
         <li className="nl-simple" aria-haspopup="true">
           <Link
