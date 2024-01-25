@@ -22,11 +22,7 @@ import Statistic1_1 from "../components/sections/Statistic1_1";
 export default function Home() {
   return (
     <>
-      <Layout
-        headerStyle={1}
-        footerStyle={3}
-        headerCls="navbar-dark dark-hero-header"
-      >
+      <Layout headerStyle={1} footerStyle={3} headerCls="navbar-light">
         <Hero1 />
         <Features6_1 />
         <hr className="divider" />
