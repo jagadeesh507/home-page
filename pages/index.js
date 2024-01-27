@@ -19,6 +19,7 @@ import Lnk3_1 from "../components/sections/Lnk3_1";
 import Rating1_1 from "../components/sections/Rating1_1";
 import Reviews1_1 from "../components/sections/Reviews1_1";
 import Statistic1_1 from "../components/sections/Statistic1_1";
+import TemplateDesigns from "../components/sections/templae-designs";
 export default function Home() {
   return (
     <>
@@ -42,6 +43,7 @@ export default function Home() {
         <Ct01_2 />
         <Ct08_1 />
         <Ct02_2 />
+        <TemplateDesigns />
         <Reviews1_1 />
         <Rating1_1 />
         <Integrations2_1 />

@@ -140,19 +140,6 @@ export default function Menu() {
         </li>{" "}
         {/* END MEGAMENU */}
         {/* SIMPLE NAVIGATION LINK */}
-        <li className="nl-simple" aria-haspopup="true">
-          <Link href="/pricing-1" className="h-link">
-            Pricing
-          </Link>
-        </li>
-        <li
-          className="nl-simple reg-fst-link mobile-last-link"
-          aria-haspopup="true"
-        >
-          <Link href="/login-2" className="h-link">
-            Sign in
-          </Link>
-        </li>
         <li
           className="nl-simple reg-fst-link mobile-last-link"
           aria-haspopup="true"
@@ -161,13 +148,18 @@ export default function Menu() {
             Templates
           </Link>
         </li>
+        <li className="nl-simple" aria-haspopup="true">
+          <Link href="/pricing-1" className="h-link">
+            Pricing
+          </Link>
+        </li>
         {/* SIGN UP BUTTON */}
         <li className="nl-simple" aria-haspopup="true">
           <Link
-            href="/signup-2"
+            href="/login-2"
             className="btn r-04 btn--theme hover--tra-white last-link"
           >
-            Sign up
+            Sign in
           </Link>
         </li>
       </ul>
