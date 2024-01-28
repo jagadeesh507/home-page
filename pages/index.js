@@ -11,7 +11,7 @@ import Features12_1 from "../components/sections/Features12_1";
 import Features2_1 from "../components/sections/Features2_1";
 import Features5_1 from "../components/sections/Features5_1";
 import Features6_1 from "../components/sections/Features6_1";
-import Hero3 from "../components/sections/Hero3";
+import Hero15 from "../components/sections/Hero15";
 import Integrations2_1 from "../components/sections/Integrations2_1";
 import Lnk1_1 from "../components/sections/Lnk1_1";
 import Lnk2_1 from "../components/sections/Lnk2_1";
@@ -23,8 +23,12 @@ import TemplateDesigns from "../components/sections/templae-designs";
 export default function Home() {
   return (
     <>
-      <Layout headerStyle={1} footerStyle={3} headerCls="navbar-light">
-        <Hero3 />
+      <Layout
+        headerStyle={1}
+        footerStyle={3}
+        headerCls="navbar-dark light-hero-header"
+      >
+        <Hero15 />
         <Features6_1 />
         <hr className="divider" />
         <Lnk1_1 />
