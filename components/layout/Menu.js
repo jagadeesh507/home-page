@@ -55,7 +55,7 @@ export default function Menu() {
         </li>
         {/* SIMPLE NAVIGATION LINK */}
         <li className="nl-simple" aria-haspopup="true">
-          <Link href="#features-6" className="h-link">
+          <Link href="/explore" className="h-link">
             Explore
           </Link>
         </li>
@@ -167,7 +167,7 @@ export default function Menu() {
         <li className="nl-simple" aria-haspopup="true">
           <Link
             href="/login-2"
-            className="btn r-04 btn--theme hover--tra-white last-link"
+            className="btn r-04 btn--theme hover--tra-black last-link"
           >
             Sign in
           </Link>

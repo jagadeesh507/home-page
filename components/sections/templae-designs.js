@@ -1,69 +1,73 @@
 import React from "react";
 import Link from "next/link";
 function TemplateDesigns() {
+  const templates = [
+    {
+      id: 1,
+      name: "Template 1",
+      backgroundImage: "images/template/template-1.png",
+      design:
+        "https://cloud.contentql.io/projects/20156605/editor/page/4837646",
+      preview: "https://multiworkshop.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 2,
+      name: "Template 2",
+      backgroundImage: "images/template/template-2.png",
+      design:
+        "https://cloud.contentql.io/projects/20156900/editor/page/4837927",
+      preview: "https://podcastlanding.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 3,
+      name: "Template 3",
+      backgroundImage: "images/template/template-3.png",
+      design:
+        "https://cloud.contentql.io/projects/20156911/editor/page/4837944",
+      preview: "https://halbor.resonateaes.com/",
+      type: "pro",
+    },
+  ];
   return (
     <div id="page" className="page-wrapper">
       <section id="select" className="bg-fixed select-section">
         <div className="container">
           {/* SECTION TITLE */}
-          <div className="row">
-            <div className="section-title section-space">
-              <h2 className="heading">Stunning Designs</h2>
-            </div>
-          </div>
           {/* DEMOS WRAPPER */}
           <div className="row">
             {/* LAYOUT-1 */}
-            <div
-              id="l-1"
-              className="col-md-6 col-lg-4 select_link wow fadeInUp"
-              data-wow-delay="0.4s"
-            >
-              <div className="hover-overlay">
-                <Link href="/demo-1" target="_blank">
+            {templates.map((template) => (
+              <div
+                key={template.id}
+                id="l-1"
+                className="col-md-6 col-lg-4 select_link wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <div className="hover-overlay card-view">
                   <img
                     className="img-fluid"
-                    src="/images/demo/layout-01.jpg"
-                    alt="layout-1-preview"
+                    src={template.backgroundImage}
+                    alt="layout-preview"
                   />
-                </Link>
+                  <div className="text-container">
+                    <div className="text-wow">
+                      <Link href={template.design} target="_blank">
+                        Go with this design
+                      </Link>{" "}
+                    </div>
+                    <div className="text-wow">
+                      <Link href={template.preview} target="_blank">
+                        preview Design
+                      </Link>
+                    </div>
+                  </div>
+                  <p className="payment-type">{template.type}</p>
+                </div>
+                <h4> {template.name}</h4>
               </div>
-              <h4>Template 1</h4>
-            </div>
-            {/* LAYOUT-2 */}
-            <div
-              id="l-2"
-              className="col-md-6 col-lg-4 select_link wow fadeInUp"
-              data-wow-delay="0.6s"
-            >
-              <div className="hover-overlay">
-                <Link href="/demo-2" target="_blank">
-                  <img
-                    className="img-fluid"
-                    src="/images/demo/layout-02.jpg"
-                    alt="layout-2-preview"
-                  />
-                </Link>
-              </div>
-              <h4> Template 2</h4>
-            </div>
-            {/* LAYOUT-3 */}
-            <div
-              id="l-3"
-              className="col-md-6 col-lg-4 select_link wow fadeInUp"
-              data-wow-delay="0.8s"
-            >
-              <div className="hover-overlay">
-                <Link href="/demo-3" target="_blank">
-                  <img
-                    className="img-fluid"
-                    src="/images/demo/layout-03.jpg"
-                    alt="layout-3-preview"
-                  />
-                </Link>
-              </div>
-              <h4>Template 3</h4>
-            </div>
+            ))}
           </div>{" "}
           {/* END DEMOS WRAPPER */}
         </div>{" "}

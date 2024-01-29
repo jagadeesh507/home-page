@@ -1,7 +1,218 @@
 import React from "react";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { LiaPlusCircleSolid } from "react-icons/lia";
 function Templates() {
+  const templates = [
+    {
+      id: 1,
+      name: "Template 1",
+      backgroundImage: "images/template/template-1.png",
+      design:
+        "https://cloud.contentql.io/projects/20156605/editor/page/4837646",
+      preview: "https://multiworkshop.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 2,
+      name: "Template 2",
+      backgroundImage: "images/template/template-2.png",
+      design:
+        "https://cloud.contentql.io/projects/20156900/editor/page/4837927",
+      preview: "https://podcastlanding.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 3,
+      name: "Template 3",
+      backgroundImage: "images/template/template-3.png",
+      design:
+        "https://cloud.contentql.io/projects/20156911/editor/page/4837944",
+      preview: "https://halbor.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 4,
+      name: "Template 4",
+      backgroundImage: "images/template/template-4.png",
+      design:
+        "https://cloud.contentql.io/projects/20156916/editor/page/4837953",
+      preview: "https://gymtrainer.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 5,
+      name: "Template 5",
+      backgroundImage: "images/template/template-5.png",
+      design:
+        "https://cloud.contentql.io/projects/20156927/editor/page/4837964",
+      preview: "https://restauranttemp.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 6,
+      name: "Template 6",
+      backgroundImage: "images/template/template-6.png",
+      design:
+        "https://cloud.contentql.io/projects/20156965/editor/page/4838044",
+      preview: "https://subscriptionsales.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 7,
+      name: "Template 7",
+      backgroundImage: "images/template/template-7.png",
+      design:
+        "https://cloud.contentql.io/projects/20156973/editor/page/4838059",
+      preview: "https://saaslandingpages.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 8,
+      name: "Template 8",
+      backgroundImage: "images/template/template-8.png",
+      design:
+        "https://cloud.contentql.io/projects/20156980/editor/page/4838077",
+      preview: "https://portfoliopage.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 9,
+      name: "Template 9",
+      backgroundImage: "images/template/template-9.png",
+      design:
+        "https://cloud.contentql.io/projects/20156993/editor/page/4838089",
+      preview: "https://petstore3.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 10,
+      name: "Template 10",
+      backgroundImage: "images/template/template-10.png",
+      design:
+        "https://cloud.contentql.io/projects/20157006/editor/page/4838120",
+      preview: "https://cleanorz.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 11,
+      name: "Template 11",
+      backgroundImage: "images/template/template-11.png",
+      design:
+        "https://cloud.contentql.io/projects/20157023/editor/page/4838146",
+      preview: "https://musictutor.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 12,
+      name: "Template 12",
+      backgroundImage: "images/template/template-12.png",
+      design:
+        "https://cloud.contentql.io/projects/20157027/editor/page/4838154",
+      preview: "https://lounchpodcast.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 13,
+      name: "Template 13",
+      backgroundImage: "images/template/template-13.png",
+      design:
+        "https://cloud.contentql.io/projects/20157036/editor/page/4838162",
+      preview: "https://nursery.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 14,
+      name: "Template 14",
+      backgroundImage: "images/template/template-14.png",
+      design:
+        "https://cloud.contentql.io/projects/20157044/editor/page/4838179",
+      preview: "https://dancetutor.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 15,
+      name: "Template 15",
+      backgroundImage: "images/template/template-15.png",
+      design:
+        "https://cloud.contentql.io/projects/20157052/editor/page/4838187",
+      preview: "https://dojosensei.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 16,
+      name: "Template 16",
+      backgroundImage: "images/template/template-16.png",
+      design:
+        "https://cloud.contentql.io/projects/20157062/editor/page/4838204",
+      preview: "https://linoor.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 17,
+      name: "Template 17",
+      backgroundImage: "images/template/template-17.png",
+      design:
+        "https://cloud.contentql.io/projects/20157077/editor/page/4838229",
+      preview: "https://growth2.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 18,
+      name: "Template 18",
+      backgroundImage: "images/template/template-18.png",
+      design:
+        "https://cloud.contentql.io/projects/20157092/editor/page/4838244",
+      preview: "https://yoganew.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 19,
+      name: "Template 19",
+      backgroundImage: "images/template/template-19.png",
+      design:
+        "https://cloud.contentql.io/projects/20157098/editor/page/4838252",
+      preview: "https://trefon.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 20,
+      name: "Template 20",
+      backgroundImage: "images/template/template-20.png",
+      design:
+        "https://cloud.contentql.io/projects/20157124/editor/page/4838280",
+      preview: "https://travely.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 21,
+      name: "Template 21",
+      backgroundImage: "images/template/template-21.png",
+      design:
+        "https://cloud.contentql.io/projects/20157403/editor/page/4838604",
+      preview: "https://telemed.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 22,
+      name: "Template 22",
+      backgroundImage: "images/template/template-22.png",
+      design:
+        "https://cloud.contentql.io/projects/20157423/editor/page/4838632",
+      preview: "https://tattooshop.resonateaes.com/",
+      type: "pro",
+    },
+    {
+      id: 23,
+      name: "Template 23",
+      backgroundImage: "images/template/template-23.png",
+      design:
+        "https://cloud.contentql.io/projects/20157439/editor/page/4838656",
+      preview: "https://sushi.resonateaes.com/",
+      type: "pro",
+    },
+  ];
   return (
     <>
       <Layout
@@ -10,989 +221,68 @@ function Templates() {
         headerCls="navbar-dark inner-page-header"
       >
         <div id="page" className="page-wrapper">
-          <section id="select" className="bg-fixed select-section">
+          <section
+            id="select"
+            className="bg-fixed select-section template-select"
+          >
             <div className="container">
-              {/* SECTION TITLE */}
-              <div className="row">
-                <div className="col-lg-10 offset-lg-1 section-title section-spacing">
-                  <h2>Stunning Designs</h2>
-                  <p>
-                    hand-crafted designs to get you started. Choose the one you
-                    like best and start customize it to your website
-                  </p>
-                </div>
-              </div>
-              {/* DEMOS WRAPPER */}
               <div className="row">
                 {/* LAYOUT-1 */}
                 <div
-                  id="l-1"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-1" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-01.jpg"
-                        alt="layout-1-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 1</h4>
-                </div>
-                <div
-                  id="l-17"
+                  id="l-0"
                   className="col-md-6 col-lg-4 select_link wow fadeInUp"
                   data-wow-delay="0.6s"
                 >
-                  <div className="hover-overlay">
-                    <Link
-                      href="https://gymtrainer.resonateaes.com/"
-                      target="_blank"
-                    >
+                  <div className="hover-overlay card-view">
+                    <span className="react-icon">
+                      <LiaPlusCircleSolid size={40} />
+                    </span>
+                    <div className="text-container">
+                      <div className="text-wow">
+                        <Link
+                          href="https://cloud.contentql.io/projects/20157161/editor/page/4838335"
+                          target="_blank"
+                        >
+                          Go with this design
+                        </Link>{" "}
+                      </div>
+                    </div>
+                  </div>
+                  <h4> Start from Scratch</h4>
+                </div>
+                {templates.map((template) => (
+                  <div
+                    key={template.id}
+                    id="l-1"
+                    className="col-md-6 col-lg-4 select_link wow fadeInUp"
+                    data-wow-delay="0.5s"
+                  >
+                    <div className="hover-overlay card-view">
                       <img
                         className="img-fluid"
-                        src="/images/demo/template-3.png"
-                        alt="layout-17-preview"
+                        src={template.backgroundImage}
+                        alt="layout-preview"
                       />
-                    </Link>
+                      <div className="text-container">
+                        <div className="text-wow">
+                          <Link href={template.design} target="_blank">
+                            Go with this design
+                          </Link>{" "}
+                        </div>
+                        <div className="text-wow">
+                          <Link href={template.preview} target="_blank">
+                            preview Design
+                          </Link>
+                        </div>
+                      </div>
+                      <p className="payment-type">{template.type}</p>
+                    </div>
+                    <h4> {template.name}</h4>
                   </div>
-                  <h4>Template 17</h4>
-                </div>
-                {/* LAYOUT-2 */}
-                <div
-                  id="l-2"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-2" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-02.jpg"
-                        alt="layout-2-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4> Template 2</h4>
-                </div>
-                {/* LAYOUT-3 */}
-                <div
-                  id="l-3"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-3" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-03.jpg"
-                        alt="layout-3-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 3</h4>
-                </div>
-                {/* LAYOUT-4 */}
-                <div
-                  id="l-4"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-4" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-04.jpg"
-                        alt="layout-4-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 4</h4>
-                </div>
-                {/* LAYOUT-5 */}
-                <div
-                  id="l-5"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-5" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-05.jpg"
-                        alt="layout-5-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 5</h4>
-                </div>
-                {/* LAYOUT-6 */}
-                <div
-                  id="l-6"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-6" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-06.jpg"
-                        alt="layout-6-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 6</h4>
-                </div>
-                {/* LAYOUT-7 */}
-                <div
-                  id="l-7"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-7" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-07.jpg"
-                        alt="layout-7-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 7</h4>
-                </div>
-                {/* LAYOUT-8 */}
-                <div
-                  id="l-8"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-8" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-08.jpg"
-                        alt="layout-8-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 8</h4>
-                </div>
-                {/* LAYOUT-9 */}
-                <div
-                  id="l-9"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-9" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-09.jpg"
-                        alt="layout-9-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 9</h4>
-                </div>
-                {/* LAYOUT-10 */}
-                <div
-                  id="l-10"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-10" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-10.jpg"
-                        alt="layout-10-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 10</h4>
-                </div>
-                {/* LAYOUT-11 */}
-                <div
-                  id="l-11"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-11" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-11.jpg"
-                        alt="layout-11-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 11</h4>
-                </div>
-                {/* LAYOUT-12 */}
-                <div
-                  id="l-12"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-12" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-12.jpg"
-                        alt="layout-12-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 12</h4>
-                </div>
-                {/* LAYOUT-13 */}
-                <div
-                  id="l-13"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-13" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-13.jpg"
-                        alt="layout-13-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 13</h4>
-                </div>
-                {/* LAYOUT-14 */}
-                <div
-                  id="l-14"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-14" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-14.jpg"
-                        alt="layout-14-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 14</h4>
-                </div>
-                {/* LAYOUT-15 */}
-                <div
-                  id="l-15"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-15" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-15.jpg"
-                        alt="layout-15-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 15</h4>
-                </div>
-                {/* LAYOUT-16 */}
-                <div
-                  id="l-16"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-16" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-16.jpg"
-                        alt="layout-16-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 16</h4>
-                </div>
-                {/* LAYOUT-17 */}
-                <div
-                  id="l-17"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-17" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-17.jpg"
-                        alt="layout-17-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 17</h4>
-                </div>
-                {/* LAYOUT-18 */}
-                <div
-                  id="l-18"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-18" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-18.jpg"
-                        alt="layout-18-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 18</h4>
-                </div>
-                {/* LAYOUT-19 */}
-                <div
-                  id="l-19"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-19" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-19.jpg"
-                        alt="layout-19-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 19</h4>
-                </div>
-                {/* LAYOUT-20 */}
-                <div
-                  id="l-20"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-20" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-20.jpg"
-                        alt="layout-20-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 20</h4>
-                </div>
-                {/* LAYOUT-21 */}
-                <div
-                  id="l-21"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-21" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-21.jpg"
-                        alt="layout-21-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 21</h4>
-                </div>
-                {/* LAYOUT-22 */}
-                <div
-                  id="l-22"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-22" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-22.jpg"
-                        alt="layout-22-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 22</h4>
-                </div>
-                {/* LAYOUT-23 */}
-                <div
-                  id="l-23"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-23" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-23.jpg"
-                        alt="layout-23-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 23</h4>
-                </div>
-                {/* LAYOUT-24 */}
-                <div
-                  id="l-24"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/404" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-24.jpg"
-                        alt="layout-24-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 24</h4>
-                </div>
-                {/* LAYOUT-25 */}
-                <div
-                  id="l-25"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-25" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-25.jpg"
-                        alt="layout-25-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 25</h4>
-                </div>
-                {/* LAYOUT-26 */}
-                <div
-                  id="l-26"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-26" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-26.jpg"
-                        alt="layout-26-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 26</h4>
-                </div>
-                {/* LAYOUT-27 */}
-                <div
-                  id="l-27"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/demo-27" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/layout-27.jpg"
-                        alt="layout-27-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Template 27</h4>
-                </div>
+                ))}
               </div>{" "}
-              {/* END DEMOS WRAPPER */}
             </div>{" "}
-            {/* End container */}
           </section>{" "}
-          {/* END SELECT */}
-          {/* BANNER-1
-============================================= */}
-          <section id="banner-1" className="bg--scroll banner division">
-            <div className="container">
-              <div className="row d-flex align-items-center">
-                <div className="col-lg-6">
-                  <div className="banner-1-txt color--white">
-                    <h2>Fully Responsive &amp; Retina Ready</h2>
-                    <p>
-                      Attention to details is what makes the Martex fully
-                      fuctional. No matter what kind of content you add, your
-                      website will look stunning on any major device such as
-                      tablet, smartphone etc.
-                    </p>
-                    <Link
-                      className="btn btn--pink-400 hover--tra-white"
-                      href="/demo-1"
-                      target="_blank"
-                    >
-                      See Martex in action
-                    </Link>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="banner-1-img">
-                    <img
-                      className="img-fluid"
-                      src="/images/demo/banner-1-img.png"
-                      alt="banner-image"
-                    />
-                  </div>
-                </div>
-              </div>{" "}
-              {/* End row */}
-            </div>{" "}
-            {/* End container */}
-          </section>{" "}
-          {/* END BANNER-1 */}
-          {/* INNER PAGES
-============================================= */}
-          <section id="i-pages" className="ip-section">
-            <div className="container">
-              {/* SECTION TITLE */}
-              <div className="row">
-                <div className="col-lg-10 offset-lg-1 section-title">
-                  <h2>Practical Inner Pages</h2>
-                  <p>
-                    Martex offers a vast number of pre-made inner pages which
-                    will save your time when building a website.
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                {/* ABOUT PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/about" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/about.jpg"
-                        alt="about-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>About Us</h4>
-                </div>
-                {/* CAREERS PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/careers" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/careers.jpg"
-                        alt="careers-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Careers</h4>
-                </div>
-                {/* CAREER ROLE PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/career-role" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/career-role.jpg"
-                        alt="career-role-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Career Role</h4>
-                </div>
-                {/* TEAM PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/team" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/team.jpg"
-                        alt="team-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Team</h4>
-                </div>
-                {/* FEATURES PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/features" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/features.jpg"
-                        alt="features-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Features</h4>
-                </div>
-                {/* INTEGRATIONS PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/integrations" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/integrations.jpg"
-                        alt="integrations-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Integrations</h4>
-                </div>
-                {/* PROJECTS PAGE */}
-                <div
-                  id="pts"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/projects" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/projects.jpg"
-                        alt="projects-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Our Projects</h4>
-                </div>
-                {/* SINGLE PROJECT */}
-                <div
-                  id="pd"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/project-details" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/project-details.jpg"
-                        alt="project-details-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Project Details</h4>
-                </div>
-                {/* REVIEWS PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/reviews" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/reviews.jpg"
-                        alt="reviews-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Reviews</h4>
-                </div>
-                {/* PRICING-1 PLANS */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/pricing-1" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/pricing-1.jpg"
-                        alt="pricing-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Pricing Plans #1</h4>
-                </div>
-                {/* PRICING-2 PLANS */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/pricing-2" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/pricing-2.jpg"
-                        alt="pricing-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Pricing Plans #2</h4>
-                </div>
-                {/* DOWNLOAD PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/download" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/download.jpg"
-                        alt="download-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Download</h4>
-                </div>
-                {/* FAQs PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/faqs" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/faqs.jpg"
-                        alt="faqs-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>FAQs</h4>
-                </div>
-                {/* HELP CENTER PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/help-center" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/help-center.jpg"
-                        alt="help-center-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Help Center</h4>
-                </div>
-                {/* CONTACTS PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/contacts" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/contacts.jpg"
-                        alt="contacts-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Contacts</h4>
-                </div>
-                {/* BLOG LISTING */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/blog-listing" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/blog-listing.jpg"
-                        alt="blog-listing-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Blog Listing</h4>
-                </div>
-                {/* SINGLE POST */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/single-post" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/single-post.jpg"
-                        alt="single-post-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Single Post</h4>
-                </div>
-                {/* PAGE 404 */}
-                <div
-                  id="p-404"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/404" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/404.jpg"
-                        alt="404-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Page 404</h4>
-                </div>
-                {/* TERMS PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/terms" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/terms.jpg"
-                        alt="terms-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Terms</h4>
-                </div>
-                {/* PRIVACY PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/privacy" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/privacy.jpg"
-                        alt="privacy-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Privacy</h4>
-                </div>
-                {/* COOKIES PAGE */}
-                <div
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/cookies" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/cookies.jpg"
-                        alt="cookies-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Cookies</h4>
-                </div>
-                {/* LOG IN 1 PAGE */}
-                <div
-                  id="reg-1"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/login-1" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/login-1.jpg"
-                        alt="login-1-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Log In Page #1</h4>
-                </div>
-                {/* LOG IN 2 PAGE */}
-                <div
-                  id="reg-2"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/login-2" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/login-2.jpg"
-                        alt="login-2-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Log In Page #2</h4>
-                </div>
-                {/* SIGNUP 1 PAGE */}
-                <div
-                  id="reg-3"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/signup-1" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/signup-1.jpg"
-                        alt="signup-1-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Sign Up Page #1</h4>
-                </div>
-                {/* SIGNUP 2 PAGE */}
-                <div
-                  id="reg-4"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/signup-2" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/signup-2.jpg"
-                        alt="signup-2-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Sign Up Page #2</h4>
-                </div>
-                {/* RESET PASSWORD PAGE */}
-                <div
-                  id="reg-5"
-                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="hover-overlay">
-                    <Link href="/reset-password" target="_blank">
-                      <img
-                        className="img-fluid"
-                        src="/images/demo/reset-password.jpg"
-                        alt="reset-1-preview"
-                      />
-                    </Link>
-                  </div>
-                  <h4>Reset Password</h4>
-                </div>
-              </div>{" "}
-              {/* End row */}
-            </div>{" "}
-            {/* End container */}
-          </section>{" "}
-          {/* END INNER PAGES */}
-          {/* BANNER-2
-============================================= */}
         </div>
       </Layout>
     </>

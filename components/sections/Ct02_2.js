@@ -1,7 +1,7 @@
 export default function Ct02_2() {
   return (
     <>
-      <section className="py-100 ct-02 content-section division">
+      <section className="pt-100 ct-02 content-section division">
         <div className="container">
           {/* SECTION CONTENT (ROW) */}
           <div className="row d-flex align-items-center">

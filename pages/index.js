@@ -31,8 +31,6 @@ export default function Home() {
         <Hero15 />
         <Features6_1 />
         <hr className="divider" />
-        <Lnk1_1 />
-        <Ct01_1 />
         <Features5_1 />
         <Statistic1_1 />
         <hr className="divider" />

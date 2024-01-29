@@ -7882,7 +7882,7 @@ h2.statistic-number {
 
 .hover-overlay {
   width: 100%;
-  height: 75%;
+  height: 500px;
   overflow: hidden;
   position: relative;
 }
