@@ -7,7 +7,7 @@ function TemplateDesigns() {
         <div className="container">
           {/* SECTION TITLE */}
           <div className="row">
-            <div className="col-lg-10 offset-lg-1 section-title">
+            <div className="section-title section-space">
               <h2 className="heading">Stunning Designs</h2>
             </div>
           </div>
@@ -70,7 +70,7 @@ function TemplateDesigns() {
         {/* End container */}
         <div className="row">
           <div className="col">
-            <div className="more-btn text-center mt-60 wow fadeInUp">
+            <div className="more-btn text-center wow fadeInUp">
               <Link
                 href="/templates"
                 className="btn btn--tra-black hover--theme"

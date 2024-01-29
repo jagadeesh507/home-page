@@ -19,25 +19,35 @@ export default function Menu() {
           <ul className="sub-menu">
             <li aria-haspopup="true">
               <Link href="#lnk-1">
-                <SiSpringCreators size={24} />
+                <span>
+                  <SiSpringCreators size={24} />
+                </span>
                 For Creators
               </Link>
             </li>
             <li aria-haspopup="true">
               <Link href="#lnk-2">
-                <MdOutlinePublish size={24} />
+                <span>
+                  <MdOutlinePublish size={24} />
+                </span>
                 For publishers
               </Link>
             </li>
             <li aria-haspopup="true">
               <Link href="#lnk-3">
-                <IoBusinessOutline size={24} />
+                <span>
+                  {" "}
+                  <IoBusinessOutline size={24} />
+                </span>
                 For Business
               </Link>
             </li>
             <li aria-haspopup="true">
               <Link href="#features-2">
-                <MdOutlineDeveloperMode size={24} />
+                <span>
+                  {" "}
+                  <MdOutlineDeveloperMode size={24} />
+                </span>
                 For Developers
               </Link>
             </li>

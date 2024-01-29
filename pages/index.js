@@ -1,5 +1,5 @@
 import Layout from "../components/layout/Layout";
-import Banner3_1 from "../components/sections/Banner3_1";
+import Banner13_1 from "../components/sections/Banner13_1";
 import Brands1_1 from "../components/sections/Brands1_1";
 import Ct01_1 from "../components/sections/Ct01_1";
 import Ct01_2 from "../components/sections/Ct01_2";
@@ -44,15 +44,13 @@ export default function Home() {
         <hr className="divider" />
         <Features2_1 />
         <hr className="divider" />
-        <Ct01_2 />
-        <Ct08_1 />
         <Ct02_2 />
         <TemplateDesigns />
         <Reviews1_1 />
         <Rating1_1 />
         <Integrations2_1 />
         <Faqs3_1 />
-        <Banner3_1 />
+        <Banner13_1 />
       </Layout>
     </>
   );

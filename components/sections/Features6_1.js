@@ -8,7 +8,7 @@ export default function Features6_1() {
             <div className="col-md-10 col-lg-9">
               <div className="section-title mb-70">
                 {/* Title */}
-                <h2 className="s-50 w-700">
+                <h2 className="s-10 w-800">
                   Effortless Website Creation, Engaging Alerts & Popups and
                   Dynamic Storytelling
                 </h2>

@@ -9,7 +9,7 @@ export default function Hero15() {
             <div className="col-md-6">
               <div className="hero-15-txt wow fadeInRight">
                 {/* Title */}
-                <h2 className="s-64 w-700">
+                <h2 className="s-54 w-700">
                   Create Your Website Easily. Go Code-Free.
                 </h2>
                 {/* Text */}

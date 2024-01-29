@@ -14,12 +14,11 @@ function Templates() {
             <div className="container">
               {/* SECTION TITLE */}
               <div className="row">
-                <div className="col-lg-10 offset-lg-1 section-title">
+                <div className="col-lg-10 offset-lg-1 section-title section-spacing">
                   <h2>Stunning Designs</h2>
                   <p>
-                    27 beautiful, hand-crafted designs to get you started.
-                    Choose the one you like best and start customize it to your
-                    website
+                    hand-crafted designs to get you started. Choose the one you
+                    like best and start customize it to your website
                   </p>
                 </div>
               </div>
@@ -41,6 +40,25 @@ function Templates() {
                     </Link>
                   </div>
                   <h4>Template 1</h4>
+                </div>
+                <div
+                  id="l-17"
+                  className="col-md-6 col-lg-4 select_link wow fadeInUp"
+                  data-wow-delay="0.6s"
+                >
+                  <div className="hover-overlay">
+                    <Link
+                      href="https://gymtrainer.resonateaes.com/"
+                      target="_blank"
+                    >
+                      <img
+                        className="img-fluid"
+                        src="/images/demo/template-3.png"
+                        alt="layout-17-preview"
+                      />
+                    </Link>
+                  </div>
+                  <h4>Template 17</h4>
                 </div>
                 {/* LAYOUT-2 */}
                 <div
@@ -975,47 +993,6 @@ function Templates() {
           {/* END INNER PAGES */}
           {/* BANNER-2
 ============================================= */}
-          <section id="banner-2" className="bg--scroll division">
-            <div className="container">
-              {/* BANNER TEXT*/}
-              <div className="row">
-                <div className="col-lg-8 offset-lg-2">
-                  <div className="banner-2-txt color--white text-center">
-                    <h2>Create your amazing website with Martex</h2>
-                    <p>
-                      Mix and match from over 50 exclusive section UI blocks.{" "}
-                      <span>Create something unique and beautifully</span>{" "}
-                      tailored to your needs
-                    </p>
-                    <Link
-                      href="https://themeforest.net/item/martex-software-saas-startup-html5-template/46015236"
-                      className="btn btn--pink-400 hover--tra-white"
-                    >
-                      Purchase for $15
-                    </Link>
-                  </div>
-                </div>
-              </div>{" "}
-              {/* END BANNER TEXT*/}
-            </div>{" "}
-            {/* End container */}
-          </section>{" "}
-          {/* END BANNER-2 */}
-          {/* FOOTER
-============================================= */}
-          <footer id="footer" className="footer division">
-            <div className="container">
-              <div className="row">
-                <div className="col footer-copyright">
-                  <p>Designed by JThemes Studio</p>
-                  <p>
-                    © 2023 <span>Martex.</span> All Rights Reserved
-                  </p>
-                </div>
-              </div>
-            </div>
-          </footer>{" "}
-          {/* END FOOTER */}
         </div>
       </Layout>
     </>
