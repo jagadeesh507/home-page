@@ -2,8 +2,9 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 const swiperOptions = {
-  modules: [Autoplay],
-  slidesPerView: 3,
+  modules: [],
+  slidesPerView: 4,
+
   // spaceBetween: 30,
   autoplay: {
     delay: 2500,
@@ -29,11 +30,11 @@ const swiperOptions = {
       // spaceBetween: 30,
     },
     1199: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       // spaceBetween: 30,
     },
     1350: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       // spaceBetween: 30,
     },
   },
