@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const swiperOptions = {
   modules: [Navigation],
-  slidesPerView: 5,
+  slidesPerView: 4,
 
   // spaceBetween: 30,
   autoplay: {
@@ -27,7 +27,7 @@ const swiperOptions = {
       // spaceBetween: 30,
     },
     767: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       // spaceBetween: 30,
     },
     991: {
@@ -35,11 +35,11 @@ const swiperOptions = {
       // spaceBetween: 30,
     },
     1199: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       // spaceBetween: 30,
     },
     1350: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       // spaceBetween: 30,
     },
   },
