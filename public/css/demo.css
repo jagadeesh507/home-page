@@ -428,9 +428,9 @@ hr.divider {
 }
 
 .select_link h4 {
-  font-size: 1.5rem;
-  line-height: 1;
-  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
@@ -1556,10 +1556,6 @@ nav a#pull {
 }
 .hover-overlay:hover p {
   opacity: 0;
-}
-
-.template-select {
-  margin-top: 70px;
 }
 
 .hover-overlay1 {

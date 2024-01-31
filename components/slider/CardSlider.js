@@ -1,9 +1,10 @@
-import { Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
+
 const swiperOptions = {
-  modules: [],
-  slidesPerView: 4,
+  modules: [Navigation],
+  slidesPerView: 5,
 
   // spaceBetween: 30,
   autoplay: {
@@ -11,6 +12,10 @@ const swiperOptions = {
     disableOnInteraction: false,
   },
   loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
   breakpoints: {
     320: {
@@ -22,19 +27,19 @@ const swiperOptions = {
       // spaceBetween: 30,
     },
     767: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       // spaceBetween: 30,
     },
     991: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       // spaceBetween: 30,
     },
     1199: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       // spaceBetween: 30,
     },
     1350: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       // spaceBetween: 30,
     },
   },
@@ -252,15 +257,12 @@ export default function CardSlider() {
   ];
   return (
     <>
-      {/* <Swiper {...swiperOptions}>
-                <SwiperSlide>
-
-                </SwiperSlide>
-            </Swiper> */}
       <Swiper {...swiperOptions} className="reviews-1-wrapper">
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
         {/* TESTIMONIAL #1 */}
         {templates.map((template) => (
-          <SwiperSlide className="review-card r-08">
+          <SwiperSlide className="review-card ">
             <div key={template.id} id="l-1">
               <div className="hover-overlay1 card-view">
                 <img

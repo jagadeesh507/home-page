@@ -14,15 +14,15 @@ function TemplateSearch() {
         </div>
         <div>
           <div className="template-scroll">
-            <h2>Website Template</h2>
+            <h6>Website Template</h6>
             <CardSlider />
           </div>
           <div className="template-scroll">
-            <h2>Popup and alert templates</h2>
+            <h6>Popup and alert templates</h6>
             <CardSlider />
           </div>
           <div className="template-scroll">
-            <h2>Story Templates</h2>
+            <h6>Story Templates</h6>
             <CardSlider />
           </div>
         </div>
