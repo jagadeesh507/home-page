@@ -4,7 +4,14 @@ import { SiSpringCreators } from "react-icons/si";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { MdOutlinePublish } from "react-icons/md";
 import { IoBusinessOutline } from "react-icons/io5";
-import { GoArrowUpRight } from "react-icons/go";
+import { FaAffiliatetheme } from "react-icons/fa";
+import { IoIosCode } from "react-icons/io";
+import { GoBook } from "react-icons/go";
+import { TbHelpCircle } from "react-icons/tb";
+import { MdOutlineSystemUpdateAlt } from "react-icons/md";
+import { MdOutlineIntegrationInstructions } from "react-icons/md";
+import { MdOutlineFeaturedPlayList } from "react-icons/md";
+import { AiFillEdit } from "react-icons/ai";
 
 export default function Menu() {
   const router = useRouter();
@@ -16,26 +23,26 @@ export default function Menu() {
       description:
         "Professional themes, custom integrations and qualifed experts",
       path: "/about",
-      icon: <GoArrowUpRight size={22} />,
+      icon: <MdOutlineFeaturedPlayList size={26} />,
     },
     {
       title: "Themes",
       description: "Hundreds of beautifully designed publication templates",
       path: "/about",
-      icon: <GoArrowUpRight size={22} />,
+      icon: <FaAffiliatetheme size={26} />,
     },
     {
       title: "Integrations",
       description: "Connect thousands of apps and services with your website",
       path: "/about",
-      icon: <GoArrowUpRight size={22} />,
+      icon: <MdOutlineIntegrationInstructions size={26} />,
     },
     {
       title: "Experts",
       description:
         "Get help building your site from certified ContentQL developers",
       path: "/about",
-      icon: <GoArrowUpRight size={22} />,
+      icon: <IoIosCode size={26} />,
     },
   ];
   const resources2 = [
@@ -44,27 +51,27 @@ export default function Menu() {
       description:
         "A huge library of guides, stories, interviews and tips for success",
       path: "/about",
-      icon: <GoArrowUpRight size={22} />,
+      icon: <GoBook size={26} />,
     },
     {
       title: "Help center",
       description:
         "Get help from product features and answers to common questions",
       path: "/about",
-      icon: <GoArrowUpRight size={22} />,
+      icon: <TbHelpCircle size={26} />,
     },
     {
       title: "Product updates",
       description: "all the latest changes and improvements to contentQL",
       path: "/about",
-      icon: <GoArrowUpRight size={22} />,
+      icon: <MdOutlineSystemUpdateAlt size={26} />,
     },
     {
       title: "About us",
       description:
         "Learn more about the people behind the platform (we're hiring)",
       path: "/about",
-      icon: <GoArrowUpRight size={22} />,
+      icon: <AiFillEdit size={26} />,
     },
   ];
 
@@ -80,7 +87,7 @@ export default function Menu() {
             <li aria-haspopup="true">
               <Link href="#lnk-1">
                 <span>
-                  <SiSpringCreators size={24} />
+                  <SiSpringCreators size={26} />
                 </span>
                 For Creators
               </Link>
@@ -88,7 +95,7 @@ export default function Menu() {
             <li aria-haspopup="true">
               <Link href="#lnk-2">
                 <span>
-                  <MdOutlinePublish size={24} />
+                  <MdOutlinePublish size={26} />
                 </span>
                 For publishers
               </Link>
@@ -97,7 +104,7 @@ export default function Menu() {
               <Link href="#lnk-3">
                 <span>
                   {" "}
-                  <IoBusinessOutline size={24} />
+                  <IoBusinessOutline size={26} />
                 </span>
                 For Business
               </Link>
