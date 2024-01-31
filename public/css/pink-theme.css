@@ -3882,6 +3882,23 @@ p.video-txt-sm {
   margin-left: 30px;
 }
 
+.navbar-icon {
+  display: flex;
+}
+.icon {
+  margin-right: 15px;
+  color: #b476e4;
+}
+.navitem-description {
+  font-size: 14px;
+  font-weight: 500;
+}
+.navitem-title {
+  margin-bottom: -0.5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
 /*------------------------------------------*/
 /*  HEADER LINK INFO
 /*------------------------------------------*/
@@ -4156,12 +4173,12 @@ span.sm-info {
 }
 
 .wsmenu > .wsmenu-list > li > .wsmegamenu.w-75 {
-  width: 76% !important;
-  left: 23%;
+  width: 65% !important;
+  left: 28%;
   padding: 20px 10px;
 }
 
-.wsmegamenu.w-75 .col-lg-3 {
+.wsmegamenu.w-75 .col-lg-6 {
   padding: 0 6px;
 }
 
@@ -7886,6 +7903,12 @@ h2.statistic-number {
   overflow: hidden;
   position: relative;
 }
+.hover-overlay1 {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
 
 .hover-overlay img {
   transform: scale(1);
@@ -8126,6 +8149,12 @@ p.rbox-2-txt span {
 
 .review-1 {
   padding: 40px 40px 30px;
+  margin: 0 10px 30px;
+}
+
+.review-card {
+  padding-right: 40px;
+  padding-top: 40px;
   margin: 0 10px 30px;
 }
 
@@ -13594,4 +13623,25 @@ body.theme--dark {
 
 html {
   scroll-behavior: smooth !important;
+}
+
+.template-wow {
+  margin-top: 60px;
+}
+.template-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.search-input {
+  width: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  padding-left: 12px;
+}
+.template-scroll {
+  margin-bottom: 60px;
 }

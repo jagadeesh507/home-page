@@ -4,9 +4,69 @@ import { SiSpringCreators } from "react-icons/si";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { MdOutlinePublish } from "react-icons/md";
 import { IoBusinessOutline } from "react-icons/io5";
+import { GoArrowUpRight } from "react-icons/go";
 
 export default function Menu() {
   const router = useRouter();
+  const parser = new DOMParser();
+
+  const Resources1 = [
+    {
+      title: "Marketplace",
+      description:
+        "Professional themes, custom integrations and qualifed experts",
+      path: "/about",
+      icon: <GoArrowUpRight size={22} />,
+    },
+    {
+      title: "Themes",
+      description: "Hundreds of beautifully designed publication templates",
+      path: "/about",
+      icon: <GoArrowUpRight size={22} />,
+    },
+    {
+      title: "Integrations",
+      description: "Connect thousands of apps and services with your website",
+      path: "/about",
+      icon: <GoArrowUpRight size={22} />,
+    },
+    {
+      title: "Experts",
+      description:
+        "Get help building your site from certified ContentQL developers",
+      path: "/about",
+      icon: <GoArrowUpRight size={22} />,
+    },
+  ];
+  const resources2 = [
+    {
+      title: "Start here",
+      description:
+        "A huge library of guides, stories, interviews and tips for success",
+      path: "/about",
+      icon: <GoArrowUpRight size={22} />,
+    },
+    {
+      title: "Help center",
+      description:
+        "Get help from product features and answers to common questions",
+      path: "/about",
+      icon: <GoArrowUpRight size={22} />,
+    },
+    {
+      title: "Product updates",
+      description: "all the latest changes and improvements to contentQL",
+      path: "/about",
+      icon: <GoArrowUpRight size={22} />,
+    },
+    {
+      title: "About us",
+      description:
+        "Learn more about the people behind the platform (we're hiring)",
+      path: "/about",
+      icon: <GoArrowUpRight size={22} />,
+    },
+  ];
 
   return (
     <>
@@ -46,7 +106,7 @@ export default function Menu() {
               <Link href="#features-2">
                 <span>
                   {" "}
-                  <MdOutlineDeveloperMode size={24} />
+                  <MdOutlineDeveloperMode size={32} />
                 </span>
                 For Developers
               </Link>
@@ -68,79 +128,44 @@ export default function Menu() {
             <div className="container">
               <div className="row">
                 {/* MEGAMENU LINKS */}
-                <ul className="col-md-12 col-lg-3 link-list">
-                  <li className="fst-li">
-                    <Link href="/about">About Us</Link>
-                  </li>
-                  <li>
-                    <Link href="/team">Our Team</Link>
-                  </li>
-                  <li>
-                    <Link href="/careers">
-                      Careers <span className="sm-info">4</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/career-role">Career Details</Link>
-                  </li>
-                  <li>
-                    <Link href="/contacts">Contact Us</Link>
-                  </li>
+                <ul className="col-md-12 col-lg-6 link-list">
+                  {Resources1.map((resource) => (
+                    <li className="fst-li">
+                      <Link href={resource.path}>
+                        <div className="navbar-icon">
+                          <div className="icon">{resource.icon}</div>
+
+                          <div>
+                            {" "}
+                            <p className="navitem-title">{resource.title}</p>
+                            <span className="navitem-description">
+                              {resource.description}
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="col-md-12 col-lg-6 link-list">
+                  {resources2.map((navitem) => (
+                    <li className="fst-li">
+                      <Link href={navitem.path}>
+                        <div className="navbar-icon">
+                          <div className="icon">{navitem.icon}</div>
+                          <div>
+                            {" "}
+                            <p className="navitem-title">{navitem.title}</p>
+                            <span className="navitem-description">
+                              {navitem.description}
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
                 {/* MEGAMENU LINKS */}
-                <ul className="col-md-12 col-lg-3 link-list">
-                  <li>
-                    <Link href="/features">Core Features</Link>
-                  </li>
-                  <li className="fst-li">
-                    <Link href="/projects">Our Projects</Link>
-                  </li>
-                  <li>
-                    <Link href="/project-details">Project Details</Link>
-                  </li>
-                  <li>
-                    <Link href="/reviews">Testimonials</Link>
-                  </li>
-                  <li>
-                    <Link href="/download">Download Page</Link>
-                  </li>
-                </ul>
-                {/* MEGAMENU LINKS */}
-                <ul className="col-md-12 col-lg-3 link-list">
-                  <li className="fst-li">
-                    <Link href="/pricing-1">Pricing Page #1</Link>
-                  </li>
-                  <li>
-                    <Link href="/pricing-2">Pricing Page #2</Link>
-                  </li>
-                  <li>
-                    <Link href="/faqs">FAQs Page</Link>
-                  </li>
-                  <li>
-                    <Link href="/help-center">Help Center</Link>
-                  </li>
-                  <li>
-                    <Link href="/404">404 Page</Link>
-                  </li>
-                </ul>
-                {/* MEGAMENU LINKS */}
-                <ul className="col-md-12 col-lg-3 link-list">
-                  <li className="fst-li">
-                    <Link href="/blog-listing">Blog Listing</Link>
-                  </li>
-                  <li>
-                    <Link href="/single-post">Single Blog Post</Link>
-                  </li>
-                  <li>
-                    <Link href="/login-2">Login Page</Link>
-                  </li>
-                  <li>
-                    <Link href="/signup-2">Signup Page</Link>
-                  </li>
-                  <li>
-                    <Link href="/reset-password">Reset Password</Link>
-                  </li>
-                </ul>
               </div>{" "}
               {/* End row */}
             </div>{" "}
