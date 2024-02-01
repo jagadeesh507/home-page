@@ -251,7 +251,7 @@ function Templates() {
   };
 
   const [currentPage, setCurrentPage] = useState(1);
-  const templatesPerPage = 6;
+  const templatesPerPage = 5;
 
   const indexOfLastTemplate = currentPage * templatesPerPage;
   const indexOfFirstTemplate = indexOfLastTemplate - templatesPerPage;
@@ -301,7 +301,7 @@ function Templates() {
                   </div>
                   <h4> Start from Scratch</h4>
                 </div>
-                {templates.filter(filterByName).map((template) => (
+                {currentTemplates.filter(filterByName).map((template) => (
                   <div
                     key={template.id}
                     id="l-1"
