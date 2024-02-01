@@ -13634,15 +13634,21 @@ html {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding-bottom: 40px;
+ 
 }
 .search-input {
   width: 40vw;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 20px;
+  padding-top: 8px;
+  padding-bottom:8px;
+  border-radius: 30px;
   padding-left: 12px;
+  border-color: black;
 }
+
+.template-group {
+  padding-top: 40px;
+}
+
 .template-scroll {
   margin-bottom: 60px;
 }
@@ -13671,4 +13677,8 @@ html {
 }
 .individual-item.active {
   color: #b476e5;
+}
+.template-not-found{
+  color:red;
+  text-align: center;
 }
