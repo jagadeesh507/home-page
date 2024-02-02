@@ -4079,8 +4079,8 @@ span.sm-info {
 /*------------------------------------------*/
 
 .wsmenu > .wsmenu-list > li > ul.sub-menu {
-  width: auto;
-  min-width: 200px;
+  width: 30%;
+  left: 28%;
   top: 62px;
   padding: 12px 10px;
   -webkit-border-radius: 6px;
@@ -13634,15 +13634,21 @@ html {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding-bottom: 40px;
+ 
 }
 .search-input {
   width: 40vw;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 20px;
+  padding-top: 8px;
+  padding-bottom:8px;
+  border-radius: 30px;
   padding-left: 12px;
+  border-color: black;
 }
+
+.template-group {
+  padding-top: 40px;
+}
+
 .template-scroll {
   margin-bottom: 60px;
 }
@@ -13655,4 +13661,24 @@ html {
 .swiper-button-prev,
 .swiper-button-next {
   color: #b476e5;
+}
+
+.filter-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  border-bottom: 1px green solid;
+  border-top: 1px green solid;
+  font-weight: 800;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 60px;
+}
+.individual-item.active {
+  color: #b476e5;
+}
+.template-not-found{
+  color:red;
+  text-align: center;
 }

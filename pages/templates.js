@@ -1,8 +1,12 @@
-import React from "react";
+// Templates.jsx
+
+import React, { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
-import { FaArrowRightLong } from "react-icons/fa6";
+import TemplateFilter from "../components/sections/TemplateFilter";
 import { LiaPlusCircleSolid } from "react-icons/lia";
+
 function Templates() {
   const templates = [
     {
@@ -13,6 +17,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20156605/editor/page/4837646",
       preview: "https://multiworkshop.resonateaes.com/",
       type: "pro",
+      category: "Education",
     },
     {
       id: 2,
@@ -22,6 +27,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20156900/editor/page/4837927",
       preview: "https://podcastlanding.resonateaes.com/",
       type: "pro",
+      category: "Eduction",
     },
     {
       id: 3,
@@ -31,6 +37,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20156911/editor/page/4837944",
       preview: "https://halbor.resonateaes.com/",
       type: "pro",
+      category: "Free",
     },
     {
       id: 4,
@@ -40,6 +47,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20156916/editor/page/4837953",
       preview: "https://gymtrainer.resonateaes.com/",
       type: "pro",
+      category: "Landing",
     },
     {
       id: 5,
@@ -49,6 +57,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20156927/editor/page/4837964",
       preview: "https://restauranttemp.resonateaes.com/",
       type: "pro",
+      category: "Layouts",
     },
     {
       id: 6,
@@ -58,6 +67,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20156965/editor/page/4838044",
       preview: "https://subscriptionsales.resonateaes.com/",
       type: "pro",
+      category: "Food",
     },
     {
       id: 7,
@@ -67,6 +77,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20156973/editor/page/4838059",
       preview: "https://saaslandingpages.resonateaes.com/",
       type: "pro",
+      category: "Portfolio",
     },
     {
       id: 8,
@@ -76,6 +87,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20156980/editor/page/4838077",
       preview: "https://portfoliopage.resonateaes.com/",
       type: "pro",
+      category: "Portfolio",
     },
     {
       id: 9,
@@ -85,6 +97,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20156993/editor/page/4838089",
       preview: "https://petstore3.resonateaes.com/",
       type: "pro",
+      category: "Portfolio",
     },
     {
       id: 10,
@@ -94,6 +107,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157006/editor/page/4838120",
       preview: "https://cleanorz.resonateaes.com/",
       type: "pro",
+      category: "Portfolio",
     },
     {
       id: 11,
@@ -103,6 +117,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157023/editor/page/4838146",
       preview: "https://musictutor.resonateaes.com/",
       type: "pro",
+      category: "Portfolio",
     },
     {
       id: 12,
@@ -112,6 +127,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157027/editor/page/4838154",
       preview: "https://lounchpodcast.resonateaes.com/",
       type: "pro",
+      category: "Travel",
     },
     {
       id: 13,
@@ -121,6 +137,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157036/editor/page/4838162",
       preview: "https://nursery.resonateaes.com/",
       type: "pro",
+      category: "Travel",
     },
     {
       id: 14,
@@ -130,6 +147,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157044/editor/page/4838179",
       preview: "https://dancetutor.resonateaes.com/",
       type: "pro",
+      category: "Travel",
     },
     {
       id: 15,
@@ -139,6 +157,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157052/editor/page/4838187",
       preview: "https://dojosensei.resonateaes.com/",
       type: "pro",
+      category: "Arts",
     },
     {
       id: 16,
@@ -148,6 +167,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157062/editor/page/4838204",
       preview: "https://linoor.resonateaes.com/",
       type: "pro",
+      category: "Free",
     },
     {
       id: 17,
@@ -157,6 +177,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157077/editor/page/4838229",
       preview: "https://growth2.resonateaes.com/",
       type: "pro",
+      category: "Arts",
     },
     {
       id: 18,
@@ -166,6 +187,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157092/editor/page/4838244",
       preview: "https://yoganew.resonateaes.com/",
       type: "pro",
+      category: "Arts",
     },
     {
       id: 19,
@@ -175,6 +197,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157098/editor/page/4838252",
       preview: "https://trefon.resonateaes.com/",
       type: "pro",
+      category: "Sport & Health",
     },
     {
       id: 20,
@@ -184,6 +207,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157124/editor/page/4838280",
       preview: "https://travely.resonateaes.com/",
       type: "pro",
+      category: "Sport & Health",
     },
     {
       id: 21,
@@ -193,6 +217,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157403/editor/page/4838604",
       preview: "https://telemed.resonateaes.com/",
       type: "pro",
+      category: "Sport & Health",
     },
     {
       id: 22,
@@ -202,6 +227,7 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157423/editor/page/4838632",
       preview: "https://tattooshop.resonateaes.com/",
       type: "pro",
+      category: "Business",
     },
     {
       id: 23,
@@ -211,8 +237,31 @@ function Templates() {
         "https://cloud.contentql.io/projects/20157439/editor/page/4838656",
       preview: "https://sushi.resonateaes.com/",
       type: "pro",
+      category: "Business",
     },
   ];
+
+  const searchParams = useSearchParams();
+  const [filter, setFilter] = useState(
+    searchParams.get("category") ? searchParams.get("category") : ""
+  );
+  const filterByName = (template) => {
+    if (filter === "All") return true;
+    return template.category.toLowerCase().includes(filter.toLowerCase());
+  };
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const templatesPerPage = 5;
+
+  const indexOfLastTemplate = currentPage * templatesPerPage;
+  const indexOfFirstTemplate = indexOfLastTemplate - templatesPerPage;
+  const currentTemplates = templates
+    .filter(filterByName)
+    .slice(indexOfFirstTemplate, indexOfLastTemplate);
+
+  // Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <>
       <Layout
@@ -220,6 +269,8 @@ function Templates() {
         footerStyle={3}
         headerCls="navbar-dark inner-page-header"
       >
+        <TemplateFilter filter={filter} setFilter={setFilter} />
+
         <div id="page" className="page-wrapper">
           <section
             id="select"
@@ -250,7 +301,7 @@ function Templates() {
                   </div>
                   <h4> Start from Scratch</h4>
                 </div>
-                {templates.map((template) => (
+                {currentTemplates.filter(filterByName).map((template) => (
                   <div
                     key={template.id}
                     id="l-1"
@@ -280,7 +331,29 @@ function Templates() {
                     <h4> {template.name}</h4>
                   </div>
                 ))}
-              </div>{" "}
+              </div>
+              <div className="row">
+                <ul className="pagination">
+                  {Array.from(
+                    {
+                      length: Math.ceil(
+                        templates.filter(filterByName).length / templatesPerPage
+                      ),
+                    },
+                    (_, i) => (
+                      <li key={i} className="page-item">
+                        <a
+                          onClick={() => paginate(i + 1)}
+                          href="#"
+                          className="page-link"
+                        >
+                          {i + 1}
+                        </a>
+                      </li>
+                    )
+                  )}
+                </ul>
+              </div>
             </div>{" "}
           </section>{" "}
         </div>

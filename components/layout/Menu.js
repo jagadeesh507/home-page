@@ -17,6 +17,33 @@ export default function Menu() {
   const router = useRouter();
   const parser = new DOMParser();
 
+  const product = [
+    {
+      title: "For creators",
+      description: "YouTubers, bloggers, podcasters, musicians and artists",
+      path: "/about",
+      icon: <SiSpringCreators size={26} />,
+    },
+    {
+      title: "For Publishers",
+      description: "Writers,journalists, local news and new media outlets",
+      path: "/about",
+      icon: <MdOutlinePublish size={26} />,
+    },
+    {
+      title: "For Business",
+      description: "Modern brands & companies with ambitious content marketing",
+      path: "/about",
+      icon: <MdOutlineIntegrationInstructions size={26} />,
+    },
+    {
+      title: "For Developers",
+      description: "Source code, documentation,guides and tutorials",
+      path: "/about",
+      icon: <IoIosCode size={26} />,
+    },
+  ];
+
   const Resources1 = [
     {
       title: "Marketplace",
@@ -83,41 +110,23 @@ export default function Menu() {
           <Link href="#" className="h-link">
             Product <span className="wsarrow" />
           </Link>
-          <ul className="sub-menu">
-            <li aria-haspopup="true">
-              <Link href="#lnk-1">
-                <span>
-                  <SiSpringCreators size={26} />
-                </span>
-                For Creators
-              </Link>
-            </li>
-            <li aria-haspopup="true">
-              <Link href="#lnk-2">
-                <span>
-                  <MdOutlinePublish size={26} />
-                </span>
-                For publishers
-              </Link>
-            </li>
-            <li aria-haspopup="true">
-              <Link href="#lnk-3">
-                <span>
-                  {" "}
-                  <IoBusinessOutline size={26} />
-                </span>
-                For Business
-              </Link>
-            </li>
-            <li aria-haspopup="true">
-              <Link href="#features-2">
-                <span>
-                  {" "}
-                  <MdOutlineDeveloperMode size={32} />
-                </span>
-                For Developers
-              </Link>
-            </li>
+          <ul className="sub-menu w-20">
+            {product.map((navitem) => (
+              <li className="fst-li">
+                <Link href={navitem.path}>
+                  <div className="navbar-icon">
+                    <div className="icon">{navitem.icon}</div>
+                    <div>
+                      {" "}
+                      <p className="navitem-title">{navitem.title}</p>
+                      <span className="navitem-description">
+                        {navitem.description}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </li>
+            ))}
           </ul>
         </li>
         {/* SIMPLE NAVIGATION LINK */}
