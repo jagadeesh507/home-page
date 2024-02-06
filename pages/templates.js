@@ -38,7 +38,7 @@ function Templates() {
       >
         {/* <TemplateFilter filter={filter} setFilter={setFilter} /> */}
 
-        <div id="page" className="page-wrapper">
+        <div id="page" className="page-wrapper page-header">
           <section
             id="select"
             className="bg-fixed select-section template-select"
