@@ -1,10 +1,10 @@
+import Link from "next/link";
+import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { LiaPlusCircleSolid } from "react-icons/lia";
 import Layout from "../components/layout/Layout";
 import Banner13_1 from "../components/sections/Banner13_1";
 import Hero25 from "../components/sections/Hero25";
-import { LiaPlusCircleSolid } from "react-icons/lia";
-import { FaArrowRightLong } from "react-icons/fa6";
-import Link from "next/link";
-import React from "react";
 import TemplateSearch from "../components/sections/TemplateSearch";
 function Explore() {
   return (
@@ -37,7 +37,7 @@ function Explore() {
                     <div className="text-container">
                       <div className="text-wow">
                         <Link
-                          href="https://cloud.contentql.io/projects/20157161/editor/page/4838335"
+                          href="https://cloud.contentql.io/projects/create"
                           target="_blank"
                         >
                           Create Website <FaArrowRightLong />
@@ -81,7 +81,7 @@ function Explore() {
                     <div className="text-container">
                       <div className="text-wow">
                         <Link
-                          href="https://cloud.contentql.io/projects/20162412/editor/page/4841344"
+                          href="https://cloud.contentql.io/share/gwR37FyhRoaqoQN"
                           target="_blank"
                         >
                           Create Story <FaArrowRightLong />

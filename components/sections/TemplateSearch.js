@@ -308,10 +308,7 @@ const filterByName=(template)=>{
                 <h6>Website Template</h6>
                 <CardSlider />
               </div>
-              <div className="template-scroll">
-                <h6>Popup and alert templates</h6>
-                <CardSlider />
-              </div>
+              
               <div className="template-scroll">
                 <h6>Story Templates</h6>
                 <StorySlider />
