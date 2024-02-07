@@ -1,17 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { SiSpringCreators } from "react-icons/si";
-import { MdOutlineDeveloperMode } from "react-icons/md";
-import { MdOutlinePublish } from "react-icons/md";
-import { IoBusinessOutline } from "react-icons/io5";
-import { FaAffiliatetheme } from "react-icons/fa";
-import { IoIosCode } from "react-icons/io";
-import { GoBook } from "react-icons/go";
-import { TbHelpCircle } from "react-icons/tb";
-import { MdOutlineSystemUpdateAlt } from "react-icons/md";
-import { MdOutlineIntegrationInstructions } from "react-icons/md";
-import { MdOutlineFeaturedPlayList } from "react-icons/md";
 import { AiFillEdit } from "react-icons/ai";
+import { FaAffiliatetheme } from "react-icons/fa";
+import { GoBook } from "react-icons/go";
+import { IoIosCode } from "react-icons/io";
+import { MdOutlineFeaturedPlayList, MdOutlineIntegrationInstructions, MdOutlinePublish, MdOutlineSystemUpdateAlt } from "react-icons/md";
+import { SiSpringCreators } from "react-icons/si";
+import { TbHelpCircle } from "react-icons/tb";
 
 export default function Menu() {
   const router = useRouter();
@@ -49,7 +44,7 @@ export default function Menu() {
       title: "Marketplace",
       description:
         "Professional themes, custom integrations and qualifed experts",
-      path: "/about",
+      path: "/market-place",
       icon: <MdOutlineFeaturedPlayList size={26} />,
     },
     {
@@ -61,7 +56,7 @@ export default function Menu() {
     {
       title: "Integrations",
       description: "Connect thousands of apps and services with your website",
-      path: "/about",
+      path: "/integrations",
       icon: <MdOutlineIntegrationInstructions size={26} />,
     },
     {
@@ -84,7 +79,7 @@ export default function Menu() {
       title: "Help center",
       description:
         "Get help from product features and answers to common questions",
-      path: "/about",
+      path: "/help-center",
       icon: <TbHelpCircle size={26} />,
     },
     {
