@@ -1,8 +1,8 @@
+import Link from "next/link"
 import CounterUp from "../components/elements/CounterUp"
 import VideoPopup from "../components/elements/VidepPopup"
 import Layout from "../components/layout/Layout"
 import BrandSlider2 from "../components/slider/BrandSlider2"
-import Link from "next/link"
 export default function Home() {
 
     return (
@@ -657,6 +657,42 @@ export default function Home() {
                             </div>	{/* END SECTION CONTENT (ROW) */}
                         </div>	   {/* End container */}
                     </section>	{/* END TEXT CONTENT */}
+                    {/* TEXT CONTENT
+			============================================= */}
+                    <section className="bg--white-400 py-100 ct-03 content-section division">
+                        <div className="container">
+                            <div className="row d-flex align-items-center">
+                                {/* TEXT BLOCK */}
+                                <div className="col-md-6 col-lg-5 order-last order-md-2">
+                                    <div className="txt-block left-column wow fadeInRight">
+                                        {/* Section ID */}
+                                        <span className="section-id">One-Stop Solution</span>
+                                        {/* Title */}
+                                        <h2 className="s-46 w-700">Data-driven digital marketing</h2>
+                                        {/* List */}
+                                        <ul className="simple-list">
+                                            <li className="list-item">
+                                                <p>Tempor sapien quaerat undo ipsum laoreet purus and sapien dolor ociis ultrice
+                                                    ipsum aliquam undo congue dolor cursus congue varius magnis
+                                                </p>
+                                            </li>
+                                            <li className="list-item">
+                                                <p className="mb-0">Cursus purus suscipit vitae cubilia magnis diam volute egestas
+                                                    sapien ultrice auctor
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>	{/* END TEXT BLOCK */}
+                                {/* IMAGE BLOCK */}
+                                <div className="col-md-6 col-lg-7 order-first order-md-2">
+                                    <div className="img-block right-column wow fadeInLeft">
+                                        <img className="img-fluid" src="/images/img-14.png" alt="content-image" />
+                                    </div>
+                                </div>
+                            </div>    {/* End row */}
+                        </div>	   {/* End container */}
+                    </section>	{/* END TEXT CONTENT */}
                     {/* TESTIMONIALS-2
 			============================================= */}
                     <section id="reviews-2" className="pt-100 reviews-section">
@@ -861,42 +897,6 @@ export default function Home() {
                             </div>	{/* END RATING-1 WRAPPER */}
                         </div>	{/* End container */}
                     </div>	{/* END RATING-1 */}
-                    {/* TEXT CONTENT
-			============================================= */}
-                    <section className="bg--white-400 py-100 ct-03 content-section division">
-                        <div className="container">
-                            <div className="row d-flex align-items-center">
-                                {/* TEXT BLOCK */}
-                                <div className="col-md-6 col-lg-5 order-last order-md-2">
-                                    <div className="txt-block left-column wow fadeInRight">
-                                        {/* Section ID */}
-                                        <span className="section-id">One-Stop Solution</span>
-                                        {/* Title */}
-                                        <h2 className="s-46 w-700">Data-driven digital marketing</h2>
-                                        {/* List */}
-                                        <ul className="simple-list">
-                                            <li className="list-item">
-                                                <p>Tempor sapien quaerat undo ipsum laoreet purus and sapien dolor ociis ultrice
-                                                    ipsum aliquam undo congue dolor cursus congue varius magnis
-                                                </p>
-                                            </li>
-                                            <li className="list-item">
-                                                <p className="mb-0">Cursus purus suscipit vitae cubilia magnis diam volute egestas
-                                                    sapien ultrice auctor
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>	{/* END TEXT BLOCK */}
-                                {/* IMAGE BLOCK */}
-                                <div className="col-md-6 col-lg-7 order-first order-md-2">
-                                    <div className="img-block right-column wow fadeInLeft">
-                                        <img className="img-fluid" src="/images/img-14.png" alt="content-image" />
-                                    </div>
-                                </div>
-                            </div>    {/* End row */}
-                        </div>	   {/* End container */}
-                    </section>	{/* END TEXT CONTENT */}
                     {/* BLOG-1
 			============================================= */}
                     <section id="blog-1" className="py-100 blog-section division">

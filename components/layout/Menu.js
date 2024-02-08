@@ -16,25 +16,25 @@ export default function Menu() {
     {
       title: "For creators",
       description: "YouTubers, bloggers, podcasters, musicians and artists",
-      path: "/about",
+      path: "/for-creators",
       icon: <SiSpringCreators size={26} />,
     },
     {
       title: "For Publishers",
       description: "Writers,journalists, local news and new media outlets",
-      path: "/about",
+      path: "/for-publishers",
       icon: <MdOutlinePublish size={26} />,
     },
     {
       title: "For Business",
       description: "Modern brands & companies with ambitious content marketing",
-      path: "/about",
+      path: "/for-business",
       icon: <MdOutlineIntegrationInstructions size={26} />,
     },
     {
       title: "For Developers",
       description: "Source code, documentation,guides and tutorials",
-      path: "/about",
+      path: "/for-developers",
       icon: <IoIosCode size={26} />,
     },
   ];
@@ -50,7 +50,7 @@ export default function Menu() {
     {
       title: "Themes",
       description: "Hundreds of beautifully designed publication templates",
-      path: "/about",
+      path: "/themes",
       icon: <FaAffiliatetheme size={26} />,
     },
     {
@@ -63,7 +63,7 @@ export default function Menu() {
       title: "Experts",
       description:
         "Get help building your site from certified ContentQL developers",
-      path: "/about",
+      path: "/team",
       icon: <IoIosCode size={26} />,
     },
   ];
@@ -72,7 +72,7 @@ export default function Menu() {
       title: "Start here",
       description:
         "A huge library of guides, stories, interviews and tips for success",
-      path: "/about",
+      path: "/start-here",
       icon: <GoBook size={26} />,
     },
     {
@@ -85,7 +85,7 @@ export default function Menu() {
     {
       title: "Product updates",
       description: "all the latest changes and improvements to contentQL",
-      path: "/about",
+      path: "/product-updates",
       icon: <MdOutlineSystemUpdateAlt size={26} />,
     },
     {
