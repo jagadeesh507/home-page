@@ -56,7 +56,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
         return () => {
             document.removeEventListener("scroll", handleScroll);
         };
-    }, [scroll]);
+    }, []);
 
     // Additional useEffect to handle mobile visibility issue
     useEffect(() => {
