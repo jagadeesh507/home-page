@@ -202,7 +202,7 @@ export default function Menu() {
         {/* SIGN UP BUTTON */}
         <li className="nl-simple" aria-haspopup="true">
           <Link
-            href="/login-2"
+            href="https://cloud.contentql.io/guest"
             className="btn r-04 btn--theme hover--tra-black last-link"
           >
             Sign in
