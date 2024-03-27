@@ -11392,7 +11392,8 @@ img.footer-logo-dark {
 }
 
 .page-link:focus {
-  color: #6c757d;
+  color: #b476e5;
+  border-radius: 50%;
   background-color: transparent;
   border: 2px solid transparent;
   box-shadow: 0 0;
@@ -13482,7 +13483,7 @@ body.theme--dark {
 
 .bg--theme,
 .shape--blue-400:after {
-  background-color: #f74780;
+  background-color: #b476e5;
 }
 
 .btn--theme {
@@ -13495,8 +13496,8 @@ body.theme--dark {
 .white-scroll .scroll .hover--theme:hover,
 .black-scroll .scroll .hover--theme:hover {
   color: #fff !important;
-  border-color: #e73971 !important;
-  background-color: #e73971 !important;
+  border-color: #b476e5 !important;
+  background-color: #b476e5 !important;
 }
 
 .theme--dark .white-scroll .scroll .hover--theme:hover {
@@ -13524,15 +13525,15 @@ body.theme--dark {
 .color--theme i,
 .color--theme span,
 .color--white .color--theme {
-  color: #f74780 !important;
+  color: #b476e5 !important;
 }
 
 .loading--theme .loader {
-  border-color: transparent #f74780;
+  border-color: transparent #b476e5;
 }
 
 .loading--theme .loader::after {
-  border-color: transparent rgba(247, 71, 128, 0.15);
+  border-color: transparent rgba(172, 140, 209, 0.15);
 }
 
 .nav-theme .sm-info {
@@ -13562,8 +13563,8 @@ body.theme--dark {
 }
 
 .cbox-2:hover .cbox-2-ico.bg--theme {
-  color: #f74780;
-  border-color: #f74780;
+  color: #b476e5;
+  border-color: #b476e5;
 }
 
 .tabs-1.tabs--theme,
@@ -13574,19 +13575,19 @@ body.theme--dark {
 
 .faqs-section .tabs--theme .tabs-1 li.current,
 .faqs-section .tabs--theme .tabs-1 li.current:hover {
-  background-color: #f74780;
-  border-color: #f74780 !important;
+  background-color: #b476e5;
+  border-color: #b476e5 !important;
 }
 
 .switch-wrap input:checked + .switcher.switcher--theme {
-  background-color: #f74780;
-  border-color: #f74780;
+  background-color: #b476e5;
+  border-color: #b476e5;
 }
 
 .shape-ico.color--theme path,
 .shape-ico.color--theme path,
 .shape-ico.color--theme path {
-  fill: #feecf2;
+  fill: #f1edff;
 }
 
 .newsletter-section .form-control:focus {
@@ -13681,4 +13682,8 @@ html {
 .template-not-found{
   color:red;
   text-align: center;
+}
+
+.page-header{
+  margin-top: 60px;
 }

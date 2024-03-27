@@ -1,17 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { SiSpringCreators } from "react-icons/si";
-import { MdOutlineDeveloperMode } from "react-icons/md";
-import { MdOutlinePublish } from "react-icons/md";
-import { IoBusinessOutline } from "react-icons/io5";
-import { FaAffiliatetheme } from "react-icons/fa";
-import { IoIosCode } from "react-icons/io";
-import { GoBook } from "react-icons/go";
-import { TbHelpCircle } from "react-icons/tb";
-import { MdOutlineSystemUpdateAlt } from "react-icons/md";
-import { MdOutlineIntegrationInstructions } from "react-icons/md";
-import { MdOutlineFeaturedPlayList } from "react-icons/md";
 import { AiFillEdit } from "react-icons/ai";
+import { FaAffiliatetheme } from "react-icons/fa";
+import { GoBook } from "react-icons/go";
+import { IoIosCode } from "react-icons/io";
+import { MdOutlineFeaturedPlayList, MdOutlineIntegrationInstructions, MdOutlinePublish, MdOutlineSystemUpdateAlt } from "react-icons/md";
+import { SiSpringCreators } from "react-icons/si";
+import { TbHelpCircle } from "react-icons/tb";
 
 export default function Menu() {
   const router = useRouter();
@@ -21,25 +16,25 @@ export default function Menu() {
     {
       title: "For creators",
       description: "YouTubers, bloggers, podcasters, musicians and artists",
-      path: "/about",
+      path: "/for-creators",
       icon: <SiSpringCreators size={26} />,
     },
     {
       title: "For Publishers",
       description: "Writers,journalists, local news and new media outlets",
-      path: "/about",
+      path: "/for-publishers",
       icon: <MdOutlinePublish size={26} />,
     },
     {
       title: "For Business",
       description: "Modern brands & companies with ambitious content marketing",
-      path: "/about",
+      path: "/for-business",
       icon: <MdOutlineIntegrationInstructions size={26} />,
     },
     {
       title: "For Developers",
       description: "Source code, documentation,guides and tutorials",
-      path: "/about",
+      path: "/for-developers",
       icon: <IoIosCode size={26} />,
     },
   ];
@@ -49,26 +44,26 @@ export default function Menu() {
       title: "Marketplace",
       description:
         "Professional themes, custom integrations and qualifed experts",
-      path: "/about",
+      path: "/market-place",
       icon: <MdOutlineFeaturedPlayList size={26} />,
     },
     {
       title: "Themes",
       description: "Hundreds of beautifully designed publication templates",
-      path: "/about",
+      path: "/themes",
       icon: <FaAffiliatetheme size={26} />,
     },
     {
       title: "Integrations",
       description: "Connect thousands of apps and services with your website",
-      path: "/about",
+      path: "/integrations",
       icon: <MdOutlineIntegrationInstructions size={26} />,
     },
     {
       title: "Experts",
       description:
         "Get help building your site from certified ContentQL developers",
-      path: "/about",
+      path: "/team",
       icon: <IoIosCode size={26} />,
     },
   ];
@@ -77,20 +72,20 @@ export default function Menu() {
       title: "Start here",
       description:
         "A huge library of guides, stories, interviews and tips for success",
-      path: "/about",
+      path: "/start-here",
       icon: <GoBook size={26} />,
     },
     {
       title: "Help center",
       description:
         "Get help from product features and answers to common questions",
-      path: "/about",
+      path: "/help-center",
       icon: <TbHelpCircle size={26} />,
     },
     {
       title: "Product updates",
       description: "all the latest changes and improvements to contentQL",
-      path: "/about",
+      path: "/product-updates",
       icon: <MdOutlineSystemUpdateAlt size={26} />,
     },
     {
@@ -207,7 +202,7 @@ export default function Menu() {
         {/* SIGN UP BUTTON */}
         <li className="nl-simple" aria-haspopup="true">
           <Link
-            href="/login-2"
+            href="https://cloud.contentql.io/guest"
             className="btn r-04 btn--theme hover--tra-black last-link"
           >
             Sign in

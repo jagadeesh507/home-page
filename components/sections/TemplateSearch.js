@@ -2,8 +2,10 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import CardSlider from "../slider/CardSlider";
+import StorySlider from "../slider/StorySlider";
 function TemplateSearch() {
 const [searchInput, setSearchInput]=useState("");
+
 const templates = [
   {
     id: 1,
@@ -306,13 +308,10 @@ const filterByName=(template)=>{
                 <h6>Website Template</h6>
                 <CardSlider />
               </div>
-              <div className="template-scroll">
-                <h6>Popup and alert templates</h6>
-                <CardSlider />
-              </div>
+              
               <div className="template-scroll">
                 <h6>Story Templates</h6>
-                <CardSlider />
+                <StorySlider />
               </div>
             </div>}
           </div>
